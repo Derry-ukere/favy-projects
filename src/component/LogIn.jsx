@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import Button from '@material-ui/core/Button';
+
+
 function LogIn() {
 
     const [fulldetail, setFulldetail] = useState({
@@ -31,13 +34,13 @@ function LogIn() {
 
         <div>
 
-            <form>
+            <form className="login">
                 <label> email adress
                     <input
                         onChange={handleChange}
                         name="email"
                         value={fulldetail.email}
-                        placeholder="email address" />
+                        placeholder="Email address" />
                 </label>
                 <label> password
                     <input
@@ -47,7 +50,7 @@ function LogIn() {
 
                         placeholder="Enter strong password" />
                 </label>
-                <button onClick={handleClick}>Sign in</button>;
+                <Button onClick={handleClick}>Sign in</Button>;
 
             </form>
         </div>
