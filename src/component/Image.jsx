@@ -4,7 +4,7 @@ function Image() {
     return (
         <div>
             <div className='star'>
-                <h1>welcome to star war the clone war</h1>
+                <h1>welcome to star wars the clone wars</h1>
 
                 <img src="/images/star_war.png" alt="star" className='star_war' />
             </div>
@@ -17,7 +17,6 @@ function Image() {
 
             </div>
         </div>
-
     );
 }
 export default Image;

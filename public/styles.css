@@ -1,216 +1,201 @@
-    .container {
-        top: 0px;
-        left: 0px;
-        width: 1920px;
-        height: 1080px;
-        text-align: center;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        padding-right: 10px;
-        padding-left: 10px;
-        opacity: 1;
-        display: block;
-    }
+html {
+    box-sizing: border-box;
+}
 
-    h1 {
-        top: 148px;
-        left: 116px;
-        width: 433px;
-        height: 104px;
-        text-align: left;
-        font: normal normal bold 32px/50px Poppins;
-        letter-spacing: 0px;
-        color: #2B2D42;
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: auto;
+    background-color: #FAFAFA;
+    min-height: 100vh;
+    /* background-color: #1F1F21; */
 
-        opacity: 1;
-        position: absolute;
-        background: #FFF6D3 0% 0% no-repeat padding-box;
-
-    }
+}
 
 
-    div.star {
-        top: 0px;
-        left: 0px;
-        width: 640px;
-        height: 1070px;
-        background: #FFF6D3 0% 0% no-repeat padding-box;
-        opacity: 0.45;
-    }
+.desktop {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1098px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-family: "adobe-clean", sans-serif;
+}
 
-    div.star img {
-        top: 539px;
-        left: 52px;
-        width: 469px;
-        height: 332px;
-        background: transparent url("/images/star_war.png") 0% 0% no-repeat padding-box;
-        opacity: 1;
-        position: absolute;
-        bottom: 0;
-        background: #FFF6D3 0% 0% no-repeat padding-box;
+div.star h1 {
+    display: block;
+    opacity: 1;
+    align-items: center;
+    top: 300px;
+    left: 116px;
+    width: 400px;
+    height: 89px;
+    position: relative;
+    color: #001A03;
 
-    }
-
-    div.Rectangle img {
-        top: 1062px;
-        left: 0px;
-        width: 640px;
-        height: 18px;
-        background: transparent url('images/Rectangle.png') 0% 0% no-repeat padding-box;
-        opacity: 1;
-        position: absolute;
-        bottom: 0;
-    }
+    opacity: 1
+}
 
 
-    div.image img {
-        top: 46px;
-        left: 1634px;
-        width: 247px;
-        height: 252px;
-        background: transparent url("/images/Astronaut.png") 0% 0% no-repeat padding-box;
-        opacity: 0.68;
-        position: absolute;
-        bottom: 0;
-    }
+div.star {
+    top: 0px;
+    left: 0px;
+    background: #FFF6D3 0% 0% no-repeat padding-box;
+    opacity: 0.45;
+    display: block;
+    align-items: center;
+    width: 640px;
+    height: 1080px;
+}
 
-    .login {
-        bottom: 0;
-        text-align: center;
+div.star img {
+    background: transparent url("/images/star_war.png") 0% 0% no-repeat padding-box;
+    display: block;
+    top: 400px;
+    left: 0px;
+    width: 469px;
+    height: 332px;
+    opacity: 1;
+    position: relative;
+}
 
-    }
-
-    form input.password {
-        background: #FAFAFA 0% 0% no-repeat padding-box;
-        border: 1px solid #8D99AE;
-        border-radius: 4px;
-        width: 350px;
-        height: 40px;
-        top: 597px;
-        left: 835px;
-        font: normal normal 600 14px/20px Source Sans Pro;
-        margin: 0 auto 30px auto;
-        opacity: 1;
-        bottom: 0;
-        text-decoration-color: black;
-        padding: 10px 15px;
-        position: absolute;
-    }
+div.Rectangle img {
+    top: 0px;
+    left: 0px;
+    width: 640px;
+    height: 18px;
+    background: transparent url('images/Rectangle.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
 
 
+div.image img {
+    top: -1050px;
+    left: 1634px;
+    width: 247px;
+    height: 252px;
+    opacity: 0.68;
+    display: flex;
+    background: transparent url("/images/Astronaut.png") 0% 0% no-repeat padding-box;
+    margin-right: 4px;
+    position: relative;
+}
 
-    form input.email {
-        background: #FAFAFA 0% 0% no-repeat padding-box;
-        border: 1px solid #8D99AE;
-        border-radius: 4px;
-        opacity: 1;
-        width: 350px;
-        height: 40px;
-        top: 500px;
-        left: 835px;
-        font: normal normal 600 14px/20px Source Sans Pro;
-        margin: 0 auto 30px auto;
-        display: block;
-
-        text-decoration-color: black;
-        padding: 10px 15px;
-        position: absolute;
-    }
-
-
-    h2 {
-        margin: 0 auto 60px auto;
-        text-align: left;
-        font: normal normal 600 24px/35px Poppins;
-        letter-spacing: 0px;
-        color: #2B2D42;
-        opacity: 1;
-        top: 159px;
-        left: 835px;
-        width: 262px;
-        height: 68px;
-        position: absolute;
-        bottom: 0;
-    }
-
-    h2 p {
-        margin: 0 auto 60px auto;
-        text-align: left;
-        font: normal normal 600 24px/35px Poppins;
-        letter-spacing: 0px;
-        color: #2B2D42;
-        opacity: 1;
-        top: 159px;
-        left: 835px;
-        width: 262px;
-        height: 58px;
-        bottom: 0;
-    }
-
-    label p.info2 {
-        font: normal normal 600 14px/20px Source Sans Pro;
-        letter-spacing: 0px;
-        color: #2B2D42;
-        opacity: 1;
-        top: 558px;
-        left: 835px;
-        width: 99px;
-        height: 50px;
-        position: absolute;
-        display: block;
-    }
-
-    label p.info {
-        font: normal normal 600 14px/20px Source Sans Pro;
-        letter-spacing: 0px;
-        color: #2B2D42;
-        opacity: 1;
-        top: 459px;
-
-        left: 835px;
-        height: 50px;
-        width: 99px;
-        position: absolute;
-        display: block;
-    }
+form input.password {
+    text-decoration-color: black;
+    top: -1032px;
+    left: 835px;
+    width: 350px;
+    height: 48px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #8D99AE;
+    border-radius: 4px;
+    opacity: 1;
+    position: relative;
+    display: flex;
 
 
-    .login button {
-
-        background: #1F1F21 0% 0% no-repeat padding-box;
-        color: #FFFFFF;
-        border-radius: 4px;
-        width: 380px;
-        height: 59px;
-        opacity: 1;
-        font: normal normal 600 14px/20px Source Sans Pro;
-        padding: 15px 15px;
-        position: absolute;
-        top: 685px;
-        left: 835px;
-    }
-
-    footer p {
-        position: absolute;
-        bottom: 0;
-        top: 149px;
-        height: 17px;
-        text-align: left;
+}
 
 
-    }
 
-    footer {
+form input.email {
 
-        top: 880px;
-        left: 666px;
-        width: 200px;
-        height: 15px;
-        font: normal normal normal 12px/17px Source Sans Pro;
-        letter-spacing: 0px;
-        color: #859BBCF5;
-        opacity: 1;
-        position: absolute;
+    position: relative;
+    display: flex;
+    text-decoration-color: black;
 
-        text-align: left;
-        text-decoration-line: none;
-    }
+    top: -1040px;
+    left: 835px;
+    width: 350px;
+    height: 48px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #8D99AE;
+    border-radius: 4px;
+    opacity: 1;
+
+}
+
+.login button {
+    top: -1000px;
+    left: 835px;
+    width: 352px;
+    height: 48px;
+    background: #1F1F21 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 10px 10px;
+    position: relative;
+    color: #FFFFFF;
+    font: normal normal 600 14px/20px Source Sans Pro;
+    text-transform: none;
+
+}
+
+
+h2 {
+
+    top: -1100px;
+    left: 835px;
+    width: 262px;
+    height: 68px;
+    font: normal normal 600 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #2B2D42;
+    opacity: 1;
+    position: relative;
+
+}
+
+
+label p.info2 {
+    top: -1030px;
+    left: 835px;
+    width: 58px;
+    height: 20px;
+    text-align: left;
+    font: normal normal 600 14px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #2B2D42;
+    opacity: 1;
+    position: relative;
+
+}
+
+label p.info {
+    top: -1040px;
+    left: 835px;
+    width: 84px;
+    height: 20px;
+    font: normal normal 600 14px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #2B2D42;
+    opacity: 1;
+    position: relative;
+
+}
+
+#Footer {
+    top: -660px;
+    left: 666px;
+    width: 100%;
+    height: 17px;
+    text-align: left;
+    font: normal normal normal 12px/17px Source Sans Pro;
+    letter-spacing: 0.01px;
+    color: #859BBCF5;
+    opacity: 1;
+    display: flex;
+    position: relative;
+    word-spacing: normal;
+    text-decoration-style: none;
+
+}
+
+p span {
+    position: relative;
+    padding-left: 5rem;
+    color: #859BBCF5;
+}

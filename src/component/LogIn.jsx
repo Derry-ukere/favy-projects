@@ -31,32 +31,32 @@ function LogIn() {
         });
     }
     return (
-            <div>
-                <h2> Sign in to continue to <p className="para">your account. </p></h2>
-                <form className="login">
-                    <label>
-                        <p className="info">email address</p>
-                        <input className="email"
-                            onChange={handleChange}
-                            name="email"
-                            value={fulldetail.email}
-                            placeholder="Email address" />
-                    </label>
-                    <label>
-                        <p className="info2">password</p>
-                        <input className="password"
-                            onChange={handleChange}
-                            name="password"
-                            value={fulldetail.password}
-                            placeholder="Enter strong password" />
-                    </label>
+        <div>
+            <h2> Sign in to continue to <br /> your account</h2>
+            <form className="login">
+                <label>
+                    <p className="info">email address</p>
+                    <input className="email"
+                        onChange={handleChange}
+                        name="email"
+                        value={fulldetail.email}
+                        placeholder="Email address" />
+                </label>
+                <label>
+                    <p className="info2">password</p>
+                    <input className="password"
+                        onChange={handleChange}
+                        name="password"
+                        value={fulldetail.password}
+                        placeholder="Enter strong password" />
+                </label>
 
-                    <Button onClick={handleClick}>Sign in</Button>
+                <Button onClick={handleClick}>Sign in</Button>
 
 
-                </form>
-            </div>
-        
+            </form>
+        </div>
+
     );
 }
 

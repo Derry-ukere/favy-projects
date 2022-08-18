@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 function Footer() {
@@ -6,14 +7,17 @@ function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div>
-            <footer>
 
-                <p> All rights reserved © {currentYear} STAR WARS privacy | Term  English</p>
+        <section id="Footer">
+            <div>
+                <p>All rights reserved © {currentYear} STAR WARS.
+                    <span> privacy | Terms  </span>
 
+                    <span>   English  {<ArrowDropDownIcon />} </span>
+                </p>
+            </div>
+        </section>
 
-            </footer>
-        </div>
     );
 }
 
