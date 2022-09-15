@@ -10,7 +10,17 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import HelpIcon from '@mui/icons-material/Help';
 import Badge from '@material-ui/core/Badge';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Grid from '@mui/material/Grid'
+import { Link } from 'react-router-dom'
 
+
+
+
+function handleClick(event) {
+    event.preventDefault();
+    console.info('You clicked a breadcrumb.');
+}
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
@@ -57,6 +67,7 @@ function Header() {
     const classes = useStyles();
 
 
+
     return (
         <div className='header'>
             <AppBar
@@ -64,48 +75,70 @@ function Header() {
                 color="inherit"
             >
                 <Toolbar variant='dense'
-
                 >
-                <IconButton
+                    <div role="presentation" onClick={handleClick}>
+                        <Grid container>
 
-                    color="inherit"
-                    aria-label="open drawer">
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                            >
 
-                    <GridViewIcon />
-                </IconButton>
+                                <nav>
+                                    <Link to='sign-in' className="header-link">
 
-                <Typography variant="h6" noWrap>
-                    Untitled
-                </Typography>
+                                        <Grid item lg={4}>
 
-                <div className={classes.grow} />
-                <div className={classes.sectionDesktop}>
-                    <IconButton color="inherit">
-                        <OpenInFullIcon />
-                    </IconButton>
+                                            <GridViewIcon />
+                                        </Grid>
+                                    </Link>
+                                </nav>
+
+                            </IconButton>
+                            <Breadcrumbs aria-label="breadcrumb">
+
+                                <Typography variant="h5" noWrap marginTop={1} >
+                                    <nav>
+                                        <Link to='sign-in' className="header-link">
+
+                                            <Grid item lg={15} >
+                                                Untitled
+                                            </Grid>
+                                        </Link>
+                                    </nav>
+                                </Typography>
+                            </Breadcrumbs>
+
+                        </Grid>
+                    </div>
+                    <div className={classes.grow} />
+                    <div className={classes.sectionDesktop}>
+                        <IconButton color="inherit">
+                            <OpenInFullIcon />
+                        </IconButton>
 
 
-                    <IconButton color="inherit">
-                        <HelpIcon />
+                        <IconButton color="inherit">
+                            <HelpIcon />
 
-                    </IconButton>
-                    <IconButton color="inherit">
-                        <Badge >
-                            <NotificationsIcon />
-                        </Badge>
-                    </IconButton>
+                        </IconButton>
+                        <IconButton color="inherit">
+                            <Badge >
+                                <NotificationsIcon />
+                            </Badge>
+                        </IconButton>
 
-                    <IconButton
-                        edge="end"
-                        aria-label="account of current use"
-                        aria-haspopup="true"
-                        color="inherit"
-                    >
-                        <AccountCircle />
-                    </IconButton>
-                </div>
-            </Toolbar >
-        </AppBar >
+                        <IconButton
+                            edge="end"
+                            aria-label="account of current use"
+                            aria-haspopup="true"
+                            color="inherit"
+                        >
+                            <AccountCircle />
+                        </IconButton>
+                    </div>
+                </Toolbar >
+            </AppBar >
         </div >
 
     );

@@ -7,9 +7,9 @@ body {
     justify-content: center;
     display: flex;
     overflow: auto;
-    background-color: #FAFAFA;
+    background-color: #fbf0f0;
     min-height: 100vh;
-    /* background-color: #1F1F21; */
+    /* background-color: #fcfcff; */
 
 }
 
@@ -19,7 +19,8 @@ body {
     left: 0px;
     width: 1920px;
     height: 1098px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background-color: #ebebf7;
+    /* background-color: #bbbdc6; */
     opacity: 1;
     font-family: "adobe-clean", sans-serif;
 }
@@ -197,5 +198,216 @@ label p.info {
 p span {
     position: relative;
     padding-left: 5rem;
+
     color: #859BBCF5;
+}
+
+div.header {
+    margin-left: 290px;
+
+}
+
+.films {
+    margin-left: 320px;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+
+.tableone {
+    font-weight: bold;
+    background-color: #efeff4;
+    margin-left: 200px;
+}
+
+
+
+.tablecontainer1 {
+    margin-left: 20px;
+
+}
+
+.headerfilm {
+    margin-left: 20px;
+}
+
+.card {
+    width: 280px;
+    height: 220px;
+    margin-top: 50px;
+}
+
+.card5 {
+    width: 280px;
+    height: 220px;
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+
+.select2 {
+    width: 200px;
+    padding-left: 16px;
+    color: #f8f8f9;
+}
+
+.select1 {
+    width: 200px;
+    padding-left: 1120px;
+}
+
+.table2 {
+    font-weight: bold;
+    background-color: #efeff4;
+}
+
+.St {
+    margin-left: 360px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.people {
+    margin-left: 360px;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+
+.sidebar {
+
+    width: 300px;
+    opacity: 1;
+    margin-top: -1058px;
+    position: fixed;
+}
+
+.sidecard {
+    height: 600px;
+    width: 300px;
+}
+
+.sidecard2 {
+    width: 300px;
+    height: 500px;
+
+}
+
+.sidecard-3 {
+    height: 600px;
+    width: 300px;
+}
+
+.sidecard3 {
+    width: 300px;
+    height: 505px;
+
+}
+
+.sidecard-vehicle {
+    height: 600px;
+    width: 300px;
+}
+
+.sidecardvehicle-1 {
+    width: 300px;
+    height: 450px;
+}
+.sidecard-people {
+    height: 600px;
+    width: 300px;
+}
+
+.sidecardpeople-1 {
+    width: 300px;
+    height: 450px;
+}
+
+
+.Gcontainer {
+    justify-content: start;
+    margin-left: 30px;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    height: 80px;
+    margin-top: 90px;
+}
+
+.Gcontainer-2 {
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    height: 80px;
+    display: flex;
+}
+
+.Gcontainer:hover {
+    color: #062505;
+    border-radius: 10px;
+}
+
+.Gcontainer-2:hover {
+    background-color: rgb(224, 164, 52);
+    border-radius: 10px;
+    color: #062505;
+
+}
+
+.header-link {
+    color: #012405;
+    text-decoration: none;
+}
+
+.sign-in-link {
+    color: #efeff4;
+    text-decoration: none;
+}
+
+.card-link {
+    color: #012405;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.film-avatar {
+    margin-top: 20px;
+}
+
+.starship-avatar {
+    margin-top: 20px;
+}
+
+.vehicle-avatar {
+    margin-top: 20px;
+
+}
+
+.people-avatar {
+    margin-top: 20px;
+
+}
+
+.specie-avatar {
+    margin-top: 20px;
+}
+
+.h3 {
+    color: rgb(3, 3, 106);
+    font-weight: bold;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.h6 {
+    color: rgb(3, 3, 106);
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.searchbutton {
+    width: 450px;
+    height: 15%;
+    border-radius: 10px;
+    border: 1px solid #d2d5d9;
+    text-transform: none;
+
 }

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Button from '@material-ui/core/Button';
-
+import { Link } from 'react-router-dom'
 
 function LogIn() {
-
     const [fulldetail, setFulldetail] = useState({
         email: "",
         password: ""
@@ -51,12 +50,15 @@ function LogIn() {
                         placeholder="Enter strong password" />
                 </label>
 
-                <Button onClick={handleClick}>Sign in</Button>
-
-
+                <Button onClick={handleClick}>
+                    <nav>
+                        <Link to='/films' className="sign-in-link">                           
+                            Sign in
+                        </Link>
+                    </nav>
+                </Button>
             </form>
         </div>
-
     );
 }
 

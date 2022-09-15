@@ -6,24 +6,28 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 
-const BottomNavbar= () => {
-    const [value, setValue] = useState(0)
 
+const BottomNavbar = () => {
+    const initialcount = 1
+    // const maximumcount = 6
+    const [count, setCount] = useState(initialcount);
+
+    // const maximumcount = () => {
+    //     for (let i = 1; i <= 7; i++) {
+    //         setCount(prevcount => prevcount + 1)
+    //     }
+    // }
 
     return (
         <BottomNavigation
-            sx={{ width: '100%', position: 'absolute', bottom: 0 }}
-            value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue)
-            }}
+            xs={{ Width: '100%', position: 'fixed', bottom: 0 }}
         >
             <BottomNavigationAction icon={<HomeIcon />} />
-            <BottomNavigationAction icon={<NavigateBeforeIcon />} />
-            <h3>1 of 6</h3>
-            <BottomNavigationAction icon={<NavigateNextIcon />} />
+            <BottomNavigationAction icon={<NavigateBeforeIcon onClick={() => setCount(prevcount => prevcount - 1)} />} />
+            <h3> {count} of 6 </h3>
+            <BottomNavigationAction icon={<NavigateNextIcon onClick={() => setCount(prevcount => prevcount + 1)} />} />
+        </BottomNavigation>
 
-        </BottomNavigation >
     );
 }
 export default BottomNavbar;
